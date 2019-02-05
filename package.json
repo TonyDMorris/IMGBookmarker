@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TonyDMorris/IMGBookmarker/issues"
   },
-  "homepage": "https://github.com/TonyDMorris/IMGBookmarker#readme"
+  "homepage": "https://github.com/TonyDMorris/IMGBookmarker#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
 }
