@@ -25,7 +25,7 @@ function updateImages(){
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
-      </div>`
+      </div></a>`
      }
 
     
