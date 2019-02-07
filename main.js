@@ -17,7 +17,7 @@ function addImg() {
 }
 
 function updateImages(){
-    let innerHtml = "";
+    document.getElementById("results").innerHTML = null;
     let imageBank = JSON.parse(localStorage.getItem('imagesArray')) || [];
     for(let i = 0; i < imageBank.length; i++){
         document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
