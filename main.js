@@ -1,5 +1,5 @@
 function addImg() {
-    event.preventDefault()
+    //event.preventDefault()
 
     const imgName = document.getElementById("imgname");
     const imgUrl = document.getElementById("imgurl");
