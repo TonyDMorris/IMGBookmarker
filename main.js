@@ -20,7 +20,7 @@ function updateImages(){
     document.getElementById("results").innerHTML = null;
     let imageBank = JSON.parse(localStorage.getItem('imagesArray')) || [];
     for(let i = 0; i < imageBank.length; i++){
-        document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
+        document.getElementById("results").innerHTML += `<a href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
