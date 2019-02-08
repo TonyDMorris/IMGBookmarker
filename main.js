@@ -25,16 +25,19 @@ function updateImages(){
     for(let i = 0; i < imageBank.length; i++){
        
         
-       if(i % 3 !== 0){
-        document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
+       if(i % 3 == 0){
+           document.getElementById("results").innerHTML += `</div><div class="card-group"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
       </div>`
+           
+           
+       
        }
         else{
-        document.getElementById("results").innerHTML += `</div><div class="card-group"><div class="card" style="width: 18rem;">
+         document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
