@@ -46,3 +46,4 @@ function updateImages(){
         }
       document.getElementById("results").innerHTML += `</div>`
        }
+}
