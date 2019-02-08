@@ -1,4 +1,6 @@
 function addImg() {
+    
+
     event.preventDefault()
 
 
@@ -71,7 +73,7 @@ function deleteImg(image){
     for(let i = 0; i < imageBank.length; i++){
         console.log(image)
         if(`${imageBank[i].url}` == image){
-            imageBank = imageBank.splice(i,1);
+            imageBank.splice(i,1);
         }
         localStorage.setItem('imagesArray', JSON.stringify(imageBank));
         updateImages();
