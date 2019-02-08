@@ -33,9 +33,7 @@ function updateImages(){
           <p class="card-text">${imageBank[i].name}</p>
         </div>
       </div>`
-           
-           
-       
+            
        }
         else{
          document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
