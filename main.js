@@ -20,14 +20,15 @@ function addImg() {
 function updateImages(){
     document.getElementById("results").innerHTML = null;
     let imageBank = JSON.parse(localStorage.getItem('imagesArray')) || [];
+    let htmlHolder;
    
-    document.getElementById("results").innerHTML += `<div class="card-group">`
+    htmlHolder += `<div class="card-group">`
     
     for(let i = 0; i < imageBank.length; i++){
        
         
        if(i % 3 == 0){
-           document.getElementById("results").innerHTML += `</div><div class="card-group"><div class="card" style="width: 18rem;">
+           htmlHolder += `</div><div class="card-group"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
@@ -36,7 +37,7 @@ function updateImages(){
             
        }
         else{
-         document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
+         htmlHolder += `<div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
@@ -44,6 +45,8 @@ function updateImages(){
       </div>`
         
         }
-      document.getElementById("results").innerHTML += `</div>`
+      htmlHolder += `</div>`
+      console.log(htmlHolder)
+      document.getElementById("results").innerHTML = htmlHolder
        }
 }
