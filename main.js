@@ -25,7 +25,7 @@ function updateImages(){
     htmlHolder = `<div class="card-group">`;
     let columnCount = 0;
     for(let i = 0; i < imageBank.length; i++){
-       
+       columnCount++
         
        if(columnCount == 3){
            columnCount = 0;
