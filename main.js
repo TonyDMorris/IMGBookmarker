@@ -26,16 +26,16 @@ function updateImages(){
        
         
        if(i % 3 !== 0){
-        document.getElementById("results").innerHTML += `<a href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap"></a>
+        document.getElementById("results").innerHTML += `<div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
       </div>`
        }
         else{
-        document.getElementById("results").innerHTML += `</div><div class="card-group"><a href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap"></a>
+        document.getElementById("results").innerHTML += `</div><div class="card-group"><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
