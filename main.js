@@ -1,3 +1,4 @@
+
 function addImg() {
     event.preventDefault()
 
@@ -45,10 +46,5 @@ function updateImages(){
       </div>`
         
         }
+      document.getElementById("results").innerHTML += `</div>`
        }
-    
-    
-document.getElementById("results").innerHTML += `</div>`
-    
-    
-}
