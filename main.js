@@ -35,9 +35,7 @@ function updateImages() {
     for (let i = 0; i < imageBank.length; i++) {
         columnCount++
 
-        if (columnCount == 3) {
-            columnCount = 0;
-            htmlHolder += `</div><div class="card-group"><a target="_blank" rel="noopener noreferrer" href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
+        let htmlLayout = `</div><div class="card-group"><a target="_blank" rel="noopener noreferrer" href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap"></a>
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
@@ -47,16 +45,12 @@ function updateImages() {
         </div>
       </div>`;
 
+        if (columnCount == 3) {
+            columnCount = 0;
+            htmlHolder += htmlLayout;
+
         } else {
-            htmlHolder += `<a target="_blank" rel="noopener noreferrer" href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap"></a>
-        <div class="card-body">
-          <p class="card-text">${imageBank[i].name}</p>
-          <button type="button" onclick="deleteImg('${imageBank[i].url}')" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
-        </div>
-      </div>`;
+            htmlHolder += htmlLayout.slice(30);
 
         }
 
