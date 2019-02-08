@@ -25,7 +25,7 @@ function updateImages(){
     for(let i = 0; i < imageBank.length; i++){
        
         
-       if(i % 3 > 0){
+       if(i % 3 !== 0){
         document.getElementById("results").innerHTML += `<a href="${imageBank[i].url}"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap"></a>
         <div class="card-body">
