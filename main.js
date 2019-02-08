@@ -22,18 +22,19 @@ function updateImages(){
     let imageBank = JSON.parse(localStorage.getItem('imagesArray')) || [];
     let htmlHolder;
    
-    htmlHolder += `<div class="card-group">`
-    
+    htmlHolder = `<div class="card-group">`;
+    let columnCount = 0;
     for(let i = 0; i < imageBank.length; i++){
        
         
-       if(i % 3 == 0){
+       if(columnCount == 3){
+           columnCount = 0;
            htmlHolder += `</div><div class="card-group"><div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${imageBank[i].url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
-      </div>`
+      </div>`;
             
        }
         else{
@@ -42,7 +43,7 @@ function updateImages(){
         <div class="card-body">
           <p class="card-text">${imageBank[i].name}</p>
         </div>
-      </div>`
+      </div>`;
         
         }
       htmlHolder += `</div>`
