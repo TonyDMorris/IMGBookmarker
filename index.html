@@ -10,33 +10,30 @@
   <script src="./main.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
- </head>
+</head>
 
-<body>
-    <div class="container">
-            
-                    
-        <form autocomplete="off" class="jumbotron">
-            <div class="form-group ">
-              <label for="imgname">Name your image</label>
-              <input type="text" class="form-control" id="imgname" placeholder="image name">
-              <small id="imghelp" class="form-text text-muted">use something unique so you can remember what you saved it for.</small>
-            </div>
-            <div class="form-group">
-              <label for="imgurl">Image URL</label>
-              <input type="url" class="form-control" id="imgurl" placeholder="https://exampleimage.com/images/example.jpg"></input>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="addImg()">Save</button>
-        </form>
-    </div>
+<body id="body">
+  <div class="container" id="front-page">
 
-<div class="container" id="results">
+    <form autocomplete="off" id="form">
+      <h1>Bookmark your favourite images from around the web</h1>
+      <div class="form-group ">
 
+        <input type="text" class="form-control" id="imgname" placeholder="image name">
 
-</div>
-            
-            
- 
+      </div>
+      <div class="form-group">
+
+        <input type="url" class="form-control" id="imgurl" placeholder=" IMG URL e.g:https://exampleimage.com/images/example.jpg"></input>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="addImg()" id="button">Save</button>
+    </form>
+  </div>
+
+  <div class="container" id="results">
+
+  </div>
+
 </body>
 
 </html>
