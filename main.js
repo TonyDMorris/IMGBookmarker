@@ -1,4 +1,4 @@
-function addImg() {P
+function addImg() {
   //prevents default action on form
   event.preventDefault();
 
