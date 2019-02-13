@@ -98,5 +98,8 @@ function deleteImg(image) {
     updateImages();
   }
 }
+window.onload= function(){
+  updateImages()
+}
 
 
