@@ -1,27 +1,56 @@
 body{
-  background-color: #DCD9D4; 
- background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
- background-blend-mode: soft-light,screen;
+  
+ background-image: linear-gradient(rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), repeating-linear-gradient(rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%)
 }
 #form{
-  margin:10%;
+  font-family: 'Open Sans', sans-serif;
+  margin:5%;
   text-align:center;
   padding:15px;
 }
 .form-control{
-  border: solid black 1px;
-  box-shadow:inset 3px 4px 5px #9fa1ad;
+  border: solid rgb(100, 75, 75) 1px;
+  box-shadow: inset 0 0 30px #EEE, 0 4px 2px -2px #888;
   padding:10px; 
   border-radius:2px;
   width:100%;
   margin:5px;
+  
+}
+.form-control:focus{
+  border:solid rgb(54, 54, 133) 2px;
+  outline:none;
+  box-shadow:inset 2px 2px 2px 2px rgba(0,0,0,0.5);
+ 
 }
 .button-submit{
-  width:20%;
-  padding:10px;
-  border-radius:5px;
-  background-color: aqua;
-  border:solid blue 2px;
+  
+  
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #383736;
+  border: 2px #383736 solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+.button-submit:hover{
+  background-color: rgb(54, 54, 133);
+  color:white;
 }
 #results {
   box-sizing: border-box;
@@ -54,10 +83,11 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   border: solid black 1px;
-  box-shadow: 3px 4px 5px #9fa1ad;
+  box-shadow: 3px 4px 5px #1c1d1f;
 }
 
 .card-text {
+  font-family: 'Open Sans', sans-serif;
   grid-area: card-text;
   vertical-align: text-top;
   border: solid black 1px;
@@ -66,5 +96,14 @@ body{
   border-radius: 0px 0px 30px 10px;
   background-color: #2a2c30;
   color: #9fa1ad;
-  box-shadow: 3px 4px 5px #9fa1ad;
+  box-shadow: 3px 4px 5px #1c1d1f;
+}
+.card-text a{
+  background-color:#2a2c30;
+  position:absolute;
+  right:5%;
+  
+}
+.card-text a:hover{
+  color:red;
 }

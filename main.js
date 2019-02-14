@@ -46,6 +46,7 @@ function updateImages() {
     <div class="card-img" style="background-image: url('${imageBank[i].url}');">
       </div>
     <div class="card-text">${imageBank[i].name}
+    <a onClick="deleteImg('${imageBank[i].url}')"><i class="far fa-times-circle"></i></a>
       </div>
       </div>`
     
