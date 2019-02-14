@@ -43,8 +43,8 @@ function updateImages() {
     
     htmlHolder += ` <div class="card">
         
-    <div class="card-img" style="background-image: url('${imageBank[i].url}');">
-      </div>
+    <a href="${imageBank[i].url}" class="card-img" style="background-image: url('${imageBank[i].url}');">
+      </a>
     <div class="card-text">${imageBank[i].name}
     <a onClick="deleteImg('${imageBank[i].url}')"><i class="far fa-times-circle"></i></a>
       </div>
