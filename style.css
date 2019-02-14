@@ -1,3 +1,28 @@
+body{
+  background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen;
+}
+#form{
+  margin:10%;
+  text-align:center;
+  padding:15px;
+}
+.form-control{
+  border: solid black 1px;
+  box-shadow:inset 3px 4px 5px #9fa1ad;
+  padding:10px; 
+  border-radius:2px;
+  width:100%;
+  margin:5px;
+}
+.button-submit{
+  width:20%;
+  padding:10px;
+  border-radius:5px;
+  background-color: aqua;
+  border:solid blue 2px;
+}
 #results {
   box-sizing: border-box;
   height: auto;
@@ -7,10 +32,6 @@
 
   grid-row-gap: 10px;
   grid-column-gap: 10px;
-
-
-
-
 }
 
 .card {
