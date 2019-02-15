@@ -1,6 +1,7 @@
-function addImg() {
+
+function addImg(e) {
   //prevents default action on form
-  event.preventDefault();
+  e.preventDefault();
 
   // variables to hold document object values
   const imgName = document.getElementById("imgname");
@@ -34,6 +35,9 @@ function addImg() {
     alert("please give a description and a valid url");
   }
 }
+
+
+
 //function for manipulating the DOM
 function updateImages() {
   // variable to hold parsed saved images from local storage
@@ -56,6 +60,10 @@ function updateImages() {
   
   document.getElementById("results").innerHTML = htmlHolder;
 }
+
+
+
+
 //function which takes the url provided by the function call and matches it against entries the imagebank
 //once a match is found the entry is removed via a splice()
 function deleteImg(image) {
@@ -74,4 +82,5 @@ window.onload= function(){
   updateImages()
 }
 
+document.getElementById("savebutton").addEventListener("click", addImg);
 
