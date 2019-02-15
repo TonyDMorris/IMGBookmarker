@@ -1,29 +1,32 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), repeating-linear-gradient(rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)
+  background-image: linear-gradient(rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), repeating-linear-gradient(rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  
 }
 
 #form {
   font-family: 'Open Sans', sans-serif;
-  margin: 5%;
+  font-weight:700;
   text-align: center;
-  padding: 15px;
+  padding:5%;
 }
 
 .form-control {
   border: solid rgb(100, 75, 75) 1px;
   box-shadow: inset 0 0 30px #EEE, 0 4px 2px -2px #888;
-  padding: 10px;
+  padding: 7px;
   border-radius: 2px;
-  width: 100%;
-  margin: 5px;
+  width: 70vw;
+  margin-bottom: 2%;
+  transition:  0.1s ease-in-out;
+  
 
 }
 
 .form-control:focus {
   border: solid rgb(54, 54, 133) 2px;
   outline: none;
-  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -42,15 +45,12 @@ body {
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
-  overflow: hidden;
+  
   background: none;
-  z-index: 1;
+ 
   cursor: pointer;
-  transition: 0.08s ease-in;
-  -o-transition: 0.08s ease-in;
-  -ms-transition: 0.08s ease-in;
-  -moz-transition: 0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
+  transition:background-color 0.2s ease-in, color 0.2s ease-in;
+  
 }
 
 .button-submit:hover {
@@ -71,14 +71,21 @@ body {
 
 .card {
   height: 30vh;
+  width:auto;
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 65% 35%;
   grid-template-areas: "card-img"
     "card-text";
   border-radius: 10px 10px 30px 10px;
+  text-align:center;
+  transition: box-shadow 0.1s ease-in-out, height 0.1s ease-in-out;
 
 
+}
+.card:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  height:30.5vh;
 }
 
 .card-img {
@@ -116,4 +123,18 @@ body {
 
 .card-text a:hover {
   color: red;
+}
+#github{
+  position:absolute;
+  background-repeat: no-repeat;
+  background-image:url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+  background-size:contain;
+  width:40px;
+  height:40px;
+  border-radius: 100%;
+  transition: filter 0.1s ease-in-out;
+}
+#github:hover{
+  filter:invert(100%);
+  
 }
