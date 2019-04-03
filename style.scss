@@ -12,7 +12,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+  grid-template-rows: 20vh 10vh 10vh 10vh 10vh 10vh;
   grid-template-columns: 5vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw 5vw;
 }
 
@@ -22,7 +22,7 @@ body {
   background-image: url("https://images.pexels.com/photos/1020315/pexels-photo-1020315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-repeat: no-repeat;
-  grid-row: 2 / span 4;
+  grid-row: 2 / span 5;
   grid-column: 2 / span 8;
   border-radius: 20px;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 8);
@@ -32,7 +32,7 @@ body {
   z-index: 0;
   height: 100%;
   width: 100%;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 5;
   grid-column: 3 / span 6;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -119,7 +119,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(auto-fill, auto);
-
+  margin-top: 5vh;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
